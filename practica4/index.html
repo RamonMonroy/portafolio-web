@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki Intergaláctica</title>
+    <style>
+        body { font-family: sans-serif; background: #202329; color: white; text-align: center; }
+        h1 { margin-top: 30px; font-size: 3rem; }
+        
+        /* El Contenedor donde JS inyectará las tarjetas */
+        #contenedor-personajes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilo de la tarjeta que crearemos con JS */
+        .tarjeta {
+            background: #3c3e44;
+            border-radius: 10px;
+            width: 250px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: transform 0.2s;
+        }
+        .tarjeta:hover { transform: scale(1.05); }
+        .tarjeta img { width: 100%; }
+        .info { padding: 15px; }
+        .estado { font-weight: bold; }
+        .vivo { color: #55cc44; }
+        .muerto { color: #d63d2e; }
+    </style>
+</head>
+<body>
+    <h1>Rick & Morty API</h1>
+    <p>Datos obtenidos en tiempo real desde: rickandmortyapi.com</p>
+    
+    <div id="contenedor-personajes"></div>
+
+    <script src="logica.js"></script>
+</body>
+</html>
