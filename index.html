@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeSPA - Vanilla JS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans">
+    <div id="app" class="p-6 max-w-5xl mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-red-600 mb-4">Pokédex Asíncrona</h1>
+            <input type="text" id="search" placeholder="Busca un Pokémon por nombre..." 
+                   class="w-full md:w-1/2 p-3 rounded-full border-2 border-red-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-red-400">
+        </header>
+
+        <div id="loader" class="text-center py-10 hidden">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto"></div>
+        </div>
+
+        <div id="poke-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
